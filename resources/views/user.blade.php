@@ -21,8 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @foreach ($users as $user)
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0"> 
            <h1>{{$user->name}}</h1>
            <ul>
                <li>
@@ -37,8 +36,7 @@
                 <li>
                     {{$user->articles_sum_votes}} {{Str::plural('article vote', $user->articles_sum_votes)}}
                 </li>
-           </ul>
-           @endforeach
+           </ul> 
         </div>
     </body>
 </html>
